@@ -2,5 +2,5 @@ FROM node:14
 WORKDIR /opt/app
 ADD . .
 RUN npm install
-RUN npm build api
+RUN npm run build api
 CMD ["node", "./dist/apps/api/main.js"]
